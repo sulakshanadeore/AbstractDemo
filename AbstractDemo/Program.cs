@@ -12,13 +12,26 @@ namespace AbstractDemo
         {
             AmazonAsCustomer customer = new AmazonAsCustomer();
             double PriceForAmazon=customer.CalculateDiscount(100, 200, 10);
-            Console.WriteLine(PriceForAmazon);
+            Console.WriteLine($"Price for Amazon :  {PriceForAmazon}");
 
             EndCustomer we = new EndCustomer();
             double PriceForUs=we.CalculateDiscount(100, 210, 2);
 
-            Console.WriteLine(PriceForUs);
+            Console.WriteLine($"Price for PriceForUs :  {PriceForUs}"); 
 
+            AssociateSeller associate=new AssociateSeller();
+            double PriceForAssociate=associate.CalculateDiscount(100, 190, 3);
+            Console.WriteLine($"Price for PriceForAssociate :  {PriceForAssociate}");
+
+            using (ClassDemo2 obj=new ClassDemo2())
+            {
+                obj.Dispose();
+
+            }
+
+            ClassDemo2 obj1=new ClassDemo2();
+            obj1.Dispose();
+                    
 
             //SecondaryStudent s=new SecondaryStudent();
             //Console.WriteLine("Enter rollno");
