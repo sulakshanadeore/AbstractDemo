@@ -15,9 +15,9 @@ namespace AbstractDemo
             Console.WriteLine(PriceForAmazon);
 
             EndCustomer we = new EndCustomer();
-            double PriceForus=we.CalculateDiscount(100, 210, 2);
+            double PriceForUs=we.CalculateDiscount(100, 210, 2);
 
-            Console.WriteLine(PriceForus);
+            Console.WriteLine(PriceForUs);
 
 
             //SecondaryStudent s=new SecondaryStudent();

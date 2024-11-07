@@ -19,9 +19,9 @@ namespace AbstractDemo
     {
         public override double CalculateDiscount(int qty, float price, int discount)
         {
-            double TotalPrice = qty * price;
+         
             double shipping = 100;
-            double PriceAfterDiscount = TotalPrice - (TotalPrice * discount / 100) +shipping;
+            double PriceAfterDiscount = base.CalculateDiscount(qty,price,discount) +shipping;
             return PriceAfterDiscount;
 
         }
